@@ -9,9 +9,11 @@ Other adjustments (group names, key bindings) in majority come from default Arch
 
 I also added a copy of the ArchLabs `rofr.sh` script. The logout command has been adjusted to qtile.
 
-DO NOT FORGET to edit `autostart.sh` to your needs / installed packages.
+## Usage
 
-DO NOT DELETE the `__init__.py` file.
+- Copy all files from the `myqtile` folder to `~/.config/qtile/`.
+- **Do not forget** to edit `autostart.sh` to your needs / installed packages.
+- **Do not delete** the `__init__.py` file.
 
 ## Known issues
 
