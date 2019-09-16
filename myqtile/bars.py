@@ -18,7 +18,7 @@ primary_top = bar.Bar(
         widget.Systray(),
         widget.Sep(**soft_sep),
         widget.Clock(format='%Y-%m-%d %a %H:%M:%S'),
-        widget.Battery(format='{char} {percent:2.0%}'),
+        # widget.Battery(format='{char} {percent:2.0%}'),
     ], 30)
 
 primary_bottom = bar.Bar(
@@ -31,7 +31,8 @@ primary_bottom = bar.Bar(
         widget.Sep(**soft_sep),
         widget.Volume(),
         widget.Sep(**soft_sep),
-        widget.ThermalSensor(),
+        # This widget may crash qtile if a thermal sensor not found
+        # widget.ThermalSensor(),
         widget.Sep(**soft_sep),
         widget.Memory(),
     ], 30)
